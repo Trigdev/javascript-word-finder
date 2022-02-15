@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Strings</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/all.css" type="text/css" rel="stylesheet" />
+    <link href="css/fontawesome.css" type="text/css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Calibri;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="jumbotron mt-3 border border-3 p-3 mb-3 shadow">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-12 col-sm-12">
+            <form role="form" class="fw-bold">
+              <div class="form-group row justify-content-center">
+                <div class="col-sm-8 col-lg-8 col-md-8">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    class="form-control"
+                    placeholder="Enter a word ... "
+                  />
+                  <div class="form-text text-center">
+                    <p class="text-danger" id="message"></p>
+                  </div>
+                </div>
+                <div class="coly-sm-2 col-md-2 col-lg-2">
+                  <button class="btn btn-outline-warning btn-md" onclick="return searchword(event);">
+                    <i class="fa fa-search fa-1x"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="board" class="mt-2 text-muted">
+          <p id="words">
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="project.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/fontawesome.js"></script>
+  </body>
+</html>
